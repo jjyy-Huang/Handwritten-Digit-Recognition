@@ -5,7 +5,8 @@
 """
 import torch
 
-BATCH_SIZE = 64
-EPOCHS = 20
+BATCH_SIZE = 128
+EPOCHS = 10
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-NUM_WORKERS = 2
+NUM_WORKERS = 4
+INFER_MODE = 'float32'
